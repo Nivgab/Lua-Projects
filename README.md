@@ -14,3 +14,6 @@ Skids are people who steal someone's code and claim it as their own or modify it
 # Here are my current Lua projects:
 # Nitro Gift Generator
 ![image](https://user-images.githubusercontent.com/122719653/212534070-da8f8aba-db88-4e2c-a2ad-ed971def3c55.png)
+
+# IP Grabber
+https://cdn.discordapp.com/attachments/1054095852077064335/1064171147245125652/image.png
