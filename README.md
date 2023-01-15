@@ -16,4 +16,4 @@ Skids are people who steal someone's code and claim it as their own or modify it
 ![image](https://user-images.githubusercontent.com/122719653/212534070-da8f8aba-db88-4e2c-a2ad-ed971def3c55.png)
 
 # IP Grabber
-https://cdn.discordapp.com/attachments/1054095852077064335/1064171147245125652/image.png
+![image](https://user-images.githubusercontent.com/122719653/212545207-c16c897d-8c50-4d6b-a2c4-b06b10da4c82.png)
