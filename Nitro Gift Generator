@@ -1,0 +1,70 @@
+--//KEEP IN MIND THAT THERE IS LIKE A 1/1,000,000,000,000,000 CHANCE THAT ONE OF THESE WORK!
+
+
+local GeneratorEnabled = true
+local Amount = 12
+
+function GenerateGift()
+if GeneratorEnabled == true then
+    task.spawn(function()
+    for i = 1, Amount do
+    local chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local str = ""
+    for i = 1, math.random(11, 14) do
+        local index = math.random(1, #chars)
+        str = str .. string.sub(chars, index, index)
+    end
+
+local Webhook = 'Your webhook link here'
+pcall(function()
+local data = {
+["embeds"] = {
+{
+["title"] = 'Nitro generator v1.1.5', 'made by v7',
+["description"] = 'https://discord.gift/'..str
+}
+}
+}
+if syn then
+local response = syn.request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+elseif request then
+local response = request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+elseif http_request then
+local response = http_request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+end
+end)
+
+
+    end
+    end)
+    end
+end
+
+GenerateGift()
