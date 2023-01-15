@@ -15,7 +15,7 @@ if GeneratorEnabled == true then
         str = str .. string.sub(chars, index, index)
     end
 
-local Webhook = 'https://discord.com/api/webhooks/1063925386423054346/xleR2yVRa5_QMtLyRXwWPXaHYjY6UTPGDKj0hGNaGFX8TsWyqW67DuagFT1C_VOXulE0'
+local Webhook = 'Webhook url here' --//Put your webhook url in here dumbass
 pcall(function()
 local data = {
 ["embeds"] = {
