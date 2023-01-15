@@ -10,17 +10,17 @@ if GeneratorEnabled == true then
     for i = 1, Amount do
     local chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     local str = ""
-    for i = 1, math.random(15, 16) do
+    for i = 1, 16 do
         local index = math.random(1, #chars)
         str = str .. string.sub(chars, index, index)
     end
 
-local Webhook = 'Your webhook link here'
+local Webhook = 'https://discord.com/api/webhooks/1063925386423054346/xleR2yVRa5_QMtLyRXwWPXaHYjY6UTPGDKj0hGNaGFX8TsWyqW67DuagFT1C_VOXulE0'
 pcall(function()
 local data = {
 ["embeds"] = {
 {
-["title"] = 'Nitro generator v1.1.5', 'made by v7',
+["title"] = 'Nitro generator v1.1.5',
 ["description"] = 'https://discord.gift/'..str
 }
 }
