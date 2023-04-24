@@ -1,4 +1,66 @@
 local Troll = {}
+function Troll:FakeIcon(User,Icon)
+  if Icon == "Admin" then do
+      local PlayerList = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame
+local UserId = game:GetService("Players").LocalPlayer[User].UserId
+
+while true do
+	if PlayerList then
+		local Player = PlayerList["p_".. UserId]
+		
+		if Player then
+			local PlayerIcon = Player.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerIcon
+			
+			if PlayerIcon then
+				PlayerIcon.Image = "http://www.roblox.com/asset/?id=10086464520"
+			end
+		end
+	end
+	task.wait()
+end
+    end
+  end
+  if Icon == "Premium" then do
+      local PlayerList = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame
+local UserId = game:GetService("Players")[User].UserId
+
+while true do
+	if PlayerList then
+		local Player = PlayerList["p_".. UserId]
+		
+		if Player then
+			local PlayerIcon = Player.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerIcon
+			
+			if PlayerIcon then
+				PlayerIcon.Image = "http://www.roblox.com/asset/?id=6071020687"
+			end
+		end
+	end
+	task.wait()
+end
+    end end
+  if Icon == "Verified" then do
+    local PlayerList = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame
+local UserId = game:GetService("Players")[User].UserId
+
+while true do
+	if PlayerList then
+		local Player = PlayerList["p_".. UserId]
+		
+		if Player then
+			local PlayerIcon = Player.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerIcon
+			
+			if PlayerIcon then
+				PlayerIcon.Image = "http://www.roblox.com/asset/?id=11478378840"
+			end
+		end
+	end
+	task.wait()
+end
+    end
+  end
+  return Troll
+end
 function Troll:NewRickroll()
   loadstring(game:HttpGet("https://pastebin.com/raw/c4vRHDfj",true))()
   return Troll
