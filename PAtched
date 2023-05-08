@@ -1038,13 +1038,180 @@ Button21.BackgroundTransparency = 0.800
 Button21.Position = UDim2.new(0.0310880542, 0, 0.748400688, 0)
 Button21.Size = UDim2.new(0, 170, 0, 50)
 Button21.Font = Enum.Font.Cartoon
-Button21.Text = "Rename Me!"
+Button21.Text = "handy mandy (reach)"
 Button21.TextColor3 = Color3.fromRGB(255, 222, 189)
 Button21.TextScaled = true
 Button21.TextSize = 14.000
 Button21.TextWrapped = true
 Button21.MouseButton1Down:connect(function()
-	print("Script Here!")
+	_G.pe = true
+local tool = game:GetObjects("rbxassetid://13389126754")[1]
+tool.Parent = game.Players.LocalPlayer.Backpack
+tool.Name = "hai"
+tool.Equipped:Connect(function()
+_G.pe = true
+while true do
+task.wait(3)
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("ProximityPrompt") then
+v.MaxActivationDistance = 15
+if _G.pe == false then break end
+end
+end
+end
+end)
+tool.Unequipped:Connect(function()
+_G.pe = false
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("ProximityPrompt") then
+v.MaxActivationDistance = 7
+end
+end
+end)
+tool.Activated:Connect(function() 
+function mesg(abb, last) 
+
+
+
+local TS = game:GetService("TweenService") 
+
+
+
+local message = Instance.new("ScreenGui") 
+
+
+
+message.Name = "CustomMessages" 
+
+
+
+message.Parent = game.Players.LocalPlayer.PlayerGui 
+
+
+
+local msg = Instance.new("Frame") 
+
+
+
+msg.Name = "msg" 
+
+
+
+msg.Parent = message 
+
+
+
+msg.BackgroundColor3 = Color3.fromRGB(136, 8, 8) 
+
+
+
+msg.BackgroundTransparency = 0.5 
+
+
+
+msg.Size = UDim2.new(0.3, 0, 0.1, 0) 
+
+
+
+msg.Position = UDim2.new(0.37, 0, 0.8, 0) 
+
+
+
+local UIC = Instance.new("UICorner") 
+
+
+
+UIC.Parent = msg 
+
+
+
+UIC.CornerRadius = UDim.new(0, 15) 
+
+
+
+local TL = Instance.new("TextLabel") 
+
+
+
+TL.Name = "Message" 
+
+
+
+TL.Font = "Oswald" 
+
+
+TL.Parent = msg 
+
+
+
+TL.Text = abb 
+
+
+
+TL.TextColor3 = Color3.fromRGB(251, 206, 176) 
+
+
+
+TL.Position = UDim2.new(0.49, 0, 0.5, 0) 
+
+
+
+TL.TextSize = 28 
+
+
+
+TL.BorderSizePixel = 0 
+
+local TW2 = {} 
+
+
+
+TW2.BackgroundTransparency = 1 
+
+
+
+local TW3 = {} 
+
+
+
+TW3.TextTransparency = 1 
+
+
+
+local tI = TweenInfo.new(last) 
+
+
+
+tw = TS:Create(msg, tI, TW2) 
+
+
+
+tw:Play() 
+
+
+
+twa = TS:Create(TL, tI, TW3) 
+
+
+
+twa:Play() 
+
+
+
+wait(last) 
+
+
+
+game.Players.LocalPlayer.PlayerGui.CustomMessages:Destroy() 
+
+
+    
+
+end 
+
+mesg("handy mandy 😳 😳 😳", 10)
+
+ end)
 end)
 
 
