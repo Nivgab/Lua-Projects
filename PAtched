@@ -1229,13 +1229,13 @@ Button22.BackgroundTransparency = 0.800
 Button22.Position = UDim2.new(0.484456003, 0, 0.748400688, 0)
 Button22.Size = UDim2.new(0, 170, 0, 50)
 Button22.Font = Enum.Font.Cartoon
-Button22.Text = "Rename Me!"
+Button22.Text = "page 2"
 Button22.TextColor3 = Color3.fromRGB(255, 222, 189)
 Button22.TextScaled = true
 Button22.TextSize = 14.000
 Button22.TextWrapped = true
 Button22.MouseButton1Down:connect(function()
-	print("Script Here!")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/universal-hub/main/Nuhuh'))()
 end)
 
 --Do not tinker below here!
