@@ -334,16 +334,7 @@ do
 		return r.Body;
 	end
 
-	function utils:Execute(scr: string, ...)
-		if cache.executor.dev.changable then
-    execute(loadstring(scr)) else
-		setidentity(level)
-		task.spawn(runcode, scr);
-	end
-
-	framework.dependencies.utils.internal = utils;
-end
-
+	
 do
 	--[[ Enum ]]--
 
@@ -1182,7 +1173,16 @@ do
 	local globalScriptSelection = {};
 
 	--[[ Functions ]]--
+function utils:Execute(scr: string, ...)
+		if cache.executor.dev.changable then
+    execute(loadstring(scr)) else
+		setidentity(level)
+		task.spawn(runcode, scr);
+	end
 
+	framework.dependencies.utils.internal = utils;
+end
+v
 	local function createUI(directory: Instance): Instance
 		local base = instanceUtils:Create("Frame", { 
 			AnchorPoint = Vector2.new(0.5, 0.5), 
