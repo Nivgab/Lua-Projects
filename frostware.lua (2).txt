@@ -2799,10 +2799,9 @@ do
 					max = 8,
 					float = 1,
 					callback = function(value)
-						if cache.executor.level.changable then
-							cache.executor.dev.bool=not cache.executor.dev.bool
+								cache.executor.dev.bool=not cache.executor.dev.bool
 					
-						end
+				
 					end
 				}
 			}
