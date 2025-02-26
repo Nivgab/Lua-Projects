@@ -2794,12 +2794,12 @@ do
 				{
 					title = "Level",
 					linkedSetting = "executor.level.value",
-					optionType = "toggle",
+					optionType = "slider",
 					min = 2,
 					max = 8,
 					float = 1,
 					callback = function(value)
-								cache.executor.dev.bool=not cache.executor.dev.bool
+								level=value
 					
 				
 					end
@@ -2809,15 +2809,10 @@ do
 {
 					title = "Developer execution",
 					linkedSetting = "executor.dev.bool",
-					optionType = "slider",
-					min = 2,
-					max = 8,
-					float = 1,
+					optionType = "cache.executor.dev.bool=not cache.executor.dev.bool",
+					state = false,
 					callback = function(value)
-						if cache.executor.dev.bool then
-							cache.executor.dev.bool
-							setidentity(value);
-						end
+					cache.executor.dev.bool=not cache.executor.dev.bool
 					end
 				}
 			}
