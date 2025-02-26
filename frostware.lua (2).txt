@@ -389,8 +389,9 @@ do
 			level = {
 				bool = false,
 				changeable = false,
-				value = level
-			}
+				value = level or 8
+			},
+                        dev={bool=false}
 		},
 		player = {
 			walkSpeed = {
@@ -2793,13 +2794,29 @@ do
 				{
 					title = "Level",
 					linkedSetting = "executor.level.value",
-					optionType = "slider",
+					optionType = "toggle",
 					min = 2,
 					max = 8,
 					float = 1,
 					callback = function(value)
 						if cache.executor.level.changable then
-							level = value
+							cache.executor.dev.bool=not cache.executor.dev.bool
+					
+						end
+					end
+				}
+			}
+		},
+{
+					title = "Developer execution",
+					linkedSetting = "executor.dev.bool",
+					optionType = "slider",
+					min = 2,
+					max = 8,
+					float = 1,
+					callback = function(value)
+						if cache.executor.dev.bool then
+							cache.executor.dev.bool
 							setidentity(value);
 						end
 					end
